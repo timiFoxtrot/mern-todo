@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Form from "./components/Form"
 
 function App() {
+  // eslint-disable-next-line
   const [itemText, setItemText] = useState("");
   const [listItems, setListItems] = useState([]);
   const [updateItemText, setUpdateItemText] = useState("");
@@ -69,6 +70,7 @@ function App() {
       const updatedItemIndex = listItems.findIndex(
         (item) => item._id === isUpdating
       );
+      //eslint-disable-next-line
       const updatedItem = (listItems[updatedItemIndex].item = updateItemText);
     } catch (error) {
       console.log(error);
